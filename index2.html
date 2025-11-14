@@ -9,15 +9,47 @@
     <header id="cabecalho">
         <h1>Hotel Vincenzo</h1>
     </header>
-    <section>
-        <div id="navegacao">
+    <main>
+        <aside>
+        <nav="navegacao">
             <p><a href="index1.html">Home</a></p>
             <p>Reserva</p>
             <p><a href="index3.html">Hóspedes</a></p>
-        </div>
+         </nav>
+        </aside>
+        <section id="conteudo">
+            <div id="formulario">
+                <p>Hotel Vincenzo</p>
+                <p>---------------------------</p>
+                <form action="#" method="post">
+                    <div id="mudar">  
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome"><br><br>
+                    </div>
+                    <div class="mudar">
+                        <label for="checkin">Data de Check-in:</label>
+                        <input type="date" id="checkin" name="checkin"><br><br>
+                    </div>
+                    <div class="mudar">
+                        
+                        <label for="checkout">Data de Check-out:</label>
+                        <input type="date" id="checkout" name="checkout"><br><br>
+                    </div>
+                    <div class="mudar">
+                        
+                        <label for="quarto">Quartos para reservas:</label>
+                        <select id="quarto" name="quarto">
+                    </div>
+                        <option value=""></option>
+                        <option value="quarto1">Quarto 1</option>
+                        <option value="quarto2">Quarto 2</option>
+                        <option value="quarto3">Quarto 3</option>
+                    </select><br><br>
+                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Cancelar</button>
+                </form>
+            </div>
         </section>
-    <main>
-
     </main>
 </body>
 </html>
