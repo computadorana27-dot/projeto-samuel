@@ -1,12 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Pagamento | Hotel Vincenzo</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    
+
+<div class="container">
+
+    <h1>Hotel Vincenzo</h1>
+    <h2>Área de Pagamento</h2>
+
+    <form>
+        <label>Nome completo</label>
+        <input type="text" placeholder="Digite seu nome" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Digite seu email" required>
+
+        <label>Valor da Reserva</label>
+        <input type="text" value="R$ 450,00" disabled>
+
+        <h3>Selecione a forma de pagamento:</h3>
+
+        <div class="opcoes">
+            <input type="radio" id="pag-cartao" name="pagamento">
+            <label for="pag-cartao">Cartão de Crédito</label><br>
+
+            <input type="radio" id="pag-pix" name="pagamento">
+            <label for="pag-pix">PIX</label>
+        </div>
+
+        <!-- Formulário Cartão -->
+        <div class="metodo cartao">
+            <label>Número do Cartão</label>
+            <input type="text" maxlength="16" placeholder="0000 0000 0000 0000">
+
+            <label>Validade</label>
+            <input type="text" maxlength="5" placeholder="MM/AA">
+
+            <label>CVV</label>
+            <input type="text" maxlength="3" placeholder="123">
+
+            <button type="submit">Confirmar Pagamento</button>
+        </div>
+
+        <!-- PIX -->
+        <div class="metodo pix">
+            <p>Escaneie o QR Code abaixo:</p>
+            <img width="200" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=Pagamento%20Hotel%20Vincenzo%20450.00">
+            <p><strong>Chave PIX:</strong> hotelvincenzo@pagamento.com</p>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
+
 </body>
 </html>
